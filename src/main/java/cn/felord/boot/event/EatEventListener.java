@@ -12,6 +12,7 @@ import org.springframework.context.ApplicationListener;
 public class EatEventListener implements ApplicationListener<EatEvent> {
     @Override
     public void onApplicationEvent(EatEvent eatEvent) {
+        log.info("listener watching");
         //如果吃完饭了
         if (eatEvent.isEatFinished()) {
             eatEvent.callGirlFriend();

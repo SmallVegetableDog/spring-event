@@ -14,7 +14,9 @@ import org.springframework.context.ApplicationListener;
 public class EatEvent extends ApplicationEvent {
     private Boolean eatFinished;
 
-
+    public void setEatFinished(Boolean flag){
+        this.eatFinished = flag;
+    }
     /**
      * Instantiates a new Eat event.
      *

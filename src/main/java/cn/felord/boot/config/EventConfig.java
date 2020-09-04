@@ -19,8 +19,8 @@ import org.springframework.context.annotation.Configuration;
 public class EventConfig {
 
     @Bean
-    public ApplicationEvent eatEvent() {
-        return new EatEvent(true);
+    public ApplicationEvent eatEvent1() {
+        return new EatEvent(false);
     }
 
     @Bean
